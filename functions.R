@@ -23,4 +23,33 @@
  rolls <- replicate(10000, roll())
  qplot(rolls, binwidth = 1)
  
+ # Dim used to transform an atomic vector to an n-dimensional array
  
+  die <- c(1:6)
+ dim(die) <- c(3,2)
+ die
+ 
+ 
+ 
+ #matrices store values in a 2D 
+ M <- matrix(die)
+ M
+ hand1 <- c("ace", "king", "queen", "jack", "ten", "spades", "spades", 
+            "spades", "spades", "spades")
+ 
+ matrix(hand1, nrow = 5)
+ matrix(hand1, ncol = 2)
+ dim(hand1) <- c(5, 2)
+ class("hello:")
+ class(die)
+ 
+ tme <- Sys.time()
+ 
+ 
+ class(tme)
+ unclass(tme)
+ 
+ billi <- 1000000000
+ 
+ class(billi) <- c ('POSIXct', "POSIXt")
+ billi
