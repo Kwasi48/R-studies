@@ -7,6 +7,7 @@
  roll()
  
  #qplot
+ library(tidyverse)
  
  c <- c(1, 2, 34, 54 ,6, 45)
  qplot(c, binwidth = 4)
