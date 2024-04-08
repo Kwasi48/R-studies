@@ -54,3 +54,16 @@
  
  class(billi) <- c ('POSIXct', "POSIXt")
  billi
+ 
+ #factors
+ # factors are R way of storing categorical data
+ 
+ gender <- factor(c('male', 'female', 'female', 'male'))
+ typeof(gender)
+ gender
+ 
+ attributes(gender)
+ unclass(gender)
+ 
+ cards <- c("ace", "heart", 1)
+ cards
